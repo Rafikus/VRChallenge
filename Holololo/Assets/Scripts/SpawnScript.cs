@@ -20,7 +20,7 @@ public class SpawnScript : MonoBehaviour
 
     public GameObject ballPrefab;
     public GameObject targetPrefab;
-    private Vector3 gazeDirection;
+
     // Use this for initialization
     void Start()
     {
@@ -40,7 +40,7 @@ public class SpawnScript : MonoBehaviour
         }
         if (targetCounter <= 0)
         {
-            gazeDirection = Camera.main.transform.position;
+
             SpawnElement(targetPrefab, targetSpawnDelay);
             targetCounter = targetSpawnDelay;
         }

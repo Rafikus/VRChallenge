@@ -16,6 +16,13 @@ public class ClickableObject : MonoBehaviour, IInputClickHandler, IFocusable
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        Debug.Log("Clicked");
+        if(tag == "Ball")
+        {
+            FindObjectOfType<Objects>().ball = gameObject;
+        }
+        if(tag == "Target")
+        {
+            FindObjectOfType<Objects>().target = gameObject;
+        }
     }
 }

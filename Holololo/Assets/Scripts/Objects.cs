@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Objects : MonoBehaviour {
-    
-	// Use this for initialization
-	void Start () {
+
+    public GameObject ball { get; set; }
+
+    public GameObject target { get; set; }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -15,12 +19,9 @@ public class Objects : MonoBehaviour {
         {
             if(target != null)
             {
-               
+                ball.GetComponent<BallMovement>().setTarget(target.gameObject);
             }
         }
 	}
-
-    public GameObject ball { get; set; }
-
-    public GameObject target { get; set; }
+        
 }

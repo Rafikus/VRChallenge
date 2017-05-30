@@ -27,14 +27,12 @@ public class BallMovement : MonoBehaviour {
         }
     }
 
-    void setTarget(GameObject g)
+    public void setTarget(GameObject g)
     {
         target = g;
         targetVector = new Vector3(target.gameObject.transform.position.x - gameObject.transform.position.x,
                                    target.gameObject.transform.position.y - gameObject.transform.position.y,
                                    target.gameObject.transform.position.z - gameObject.transform.position.z);
-        Debug.Log("Target: " + target.transform.position.ToString());
-        Debug.Log("This: " + gameObject.transform.position.ToString());
     }
     
 }
