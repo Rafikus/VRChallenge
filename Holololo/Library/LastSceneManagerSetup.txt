@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/HoloToolkit-Tests/Input/Scenes/InputManagerTest.unity
+- path: Assets/Scenes/main.unity
   isLoaded: 1
   isActive: 1

@@ -261,11 +261,7 @@ MonoBehaviour:
   zMin: -10
   zMax: 20
   spawnDelay: 3
-<<<<<<< HEAD
   prefabElement: {fileID: 1707516210794200, guid: b65cc910bb1cbe14fa605235769f508f,
-=======
-  prefabElement: {fileID: 1089426685505778, guid: e985cb584bea61044adfabde75e66d7d,
->>>>>>> bfa37449792943a58a167524e3fe42b422f6858c
     type: 2}
 --- !u!1001 &1012235071
 Prefab:
