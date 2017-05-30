@@ -6,11 +6,9 @@ public class BallMovement : MonoBehaviour {
 
     private GameObject target;
     private Vector3 targetVector;
-    public GameObject temp;
 
     void Start()
     {
-        setTarget(temp);
     }
 
     void Update () {
