@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -258,11 +258,10 @@ MonoBehaviour:
   xMax: 100
   yMin: 50
   yMax: 100
-  zMin: 50
-  zMax: 100
+  zMin: -10
+  zMax: 20
   spawnDelay: 3
-  counter: 3
-  prefabElement: {fileID: 1707516210794200, guid: b65cc910bb1cbe14fa605235769f508f,
+  prefabElement: {fileID: 1089426685505778, guid: e985cb584bea61044adfabde75e66d7d,
     type: 2}
 --- !u!1001 &1012235071
 Prefab:
