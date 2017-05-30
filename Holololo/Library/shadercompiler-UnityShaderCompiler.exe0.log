@@ -1,23 +1,23 @@
-Base path: C:/Program Files/Unity/Editor/Data
+Base path: D:/Unity-64bit/Editor/Data
 Cmd: initializeCompiler
 Cmd: preprocess
   insize=2779 outsize=3299 ok=1
 Cmd: preprocess
   insize=2164 outsize=1627 ok=1
 Cmd: preprocess
-  insize=4503 outsize=656 ok=1
+  insize=4501 outsize=654 ok=1
 Cmd: preprocess
-  insize=2818 outsize=1422 ok=1
+  insize=2816 outsize=1420 ok=1
 Cmd: preprocess
-  insize=2059 outsize=1083 ok=1
+  insize=2057 outsize=1081 ok=1
 Cmd: preprocess
-  insize=2656 outsize=800 ok=1
+  insize=2654 outsize=798 ok=1
 Cmd: preprocess
-  insize=2753 outsize=788 ok=1
+  insize=2849 outsize=816 ok=1
 Cmd: preprocess
   insize=12649 outsize=6122 ok=1
 Cmd: preprocess
-  insize=911 outsize=330 ok=1
+  insize=909 outsize=328 ok=1
 Cmd: preprocess
   insize=2205 outsize=1668 ok=1
 Cmd: preprocess
@@ -25,11 +25,11 @@ Cmd: preprocess
 Cmd: preprocess
   insize=2535 outsize=3058 ok=1
 Cmd: preprocess
-  insize=4470 outsize=673 ok=1
+  insize=4468 outsize=671 ok=1
 Cmd: preprocess
-  insize=1433 outsize=472 ok=1
+  insize=1492 outsize=492 ok=1
 Cmd: preprocess
-  insize=1425 outsize=610 ok=1
+  insize=1423 outsize=608 ok=1
 Cmd: preprocess
   insize=2587 outsize=2713 ok=1
 Cmd: preprocess
@@ -37,16 +37,20 @@ Cmd: preprocess
 Cmd: preprocess
   insize=2543 outsize=1936 ok=1
 Cmd: preprocess
-  insize=2886 outsize=1477 ok=1
+  insize=2884 outsize=1475 ok=1
 Cmd: preprocess
-  insize=4626 outsize=808 ok=1
+  insize=4624 outsize=806 ok=1
 Cmd: preprocess
-  insize=1451 outsize=636 ok=1
+  insize=1449 outsize=634 ok=1
 Cmd: preprocess
-  insize=1558 outsize=565 ok=1
+  insize=1624 outsize=591 ok=1
 Cmd: preprocess
-  insize=1074 outsize=363 ok=1
+  insize=1072 outsize=361 ok=1
 Cmd: preprocess
   insize=15970 outsize=4217 ok=1
 Cmd: preprocess
-  insize=5844 outsize=923 ok=1
+  insize=5842 outsize=921 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4193 outsize=606 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_HARDWARE_TIER1 UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4193 outsize=582 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_HARDWARE_TIER1 UNITY_COLORSPACE_GAMMA ok=1

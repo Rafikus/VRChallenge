@@ -113,7 +113,6 @@ I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\System.Xml.XmlDocum
 I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\System.Xml.XmlSerializer.dll
 I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\Assembly-CSharp.dll
 I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\BridgeInterface.winmd
-I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\nunit.framework.dll
 I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\UnityEngine.dll
 I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\UnityEngine.HoloLens.dll
 I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\UnityEngine.Networking.dll
@@ -208,3 +207,4 @@ I:\VRChallenge\Holololo\VisualProject\Holololo\obj\x86\Debug\qualifiers.txt
 I:\VRChallenge\Holololo\VisualProject\Holololo\obj\x86\Debug\qualifiers.txt.intermediate
 I:\VRChallenge\Holololo\VisualProject\Holololo\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 I:\VRChallenge\Holololo\VisualProject\Holololo\obj\x86\Debug\ProjectArchitectures.txt
+I:\VRChallenge\Holololo\VisualProject\Holololo\bin\x86\Debug\nunit.framework.dll

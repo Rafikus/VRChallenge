@@ -16,15 +16,6 @@ public class BallMovement : MonoBehaviour {
         {
             gameObject.transform.position += targetVector * Time.deltaTime * 0.2f;
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hitInfo = new RaycastHit();
-            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
-            if (hit)
-            {
-                onClick();
-            }
-        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -46,8 +37,4 @@ public class BallMovement : MonoBehaviour {
         Debug.Log("This: " + gameObject.transform.position.ToString());
     }
     
-    public void onClick()
-    {
-        Debug.Log("Clicked");
-    }
 }
