@@ -26,11 +26,12 @@ public class BallMovement : MonoBehaviour {
     public void setTarget(GameObject g)
     {
         target = g;
-        targetVector = new Vector3(target.gameObject.transform.position.x - gameObject.transform.position.x,
-                                   target.gameObject.transform.position.y - gameObject.transform.position.y,
-                                   target.gameObject.transform.position.z - gameObject.transform.position.z);
+        targetVector = new Vector3((target.gameObject.transform.position.x - gameObject.transform.position.x) * 20,
+                                   (target.gameObject.transform.position.y - gameObject.transform.position.y) * 20,
+                                   (target.gameObject.transform.position.z - gameObject.transform.position.z) * 20);
         //gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        gameObject.GetComponent<Rigidbody>().AddForce(targetVector.normalized * Time.deltaTime * 20);
+        gameObject.GetComponent<Rigidbody>().AddForce(targetVector);
+
     }
     
 }
