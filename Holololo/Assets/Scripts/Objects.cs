@@ -20,6 +20,8 @@ public class Objects : MonoBehaviour {
             if(target != null)
             {
                 ball.GetComponent<BallMovement>().setTarget(target.gameObject);
+                target = null;
+                ball = null;
             }
         }
 	}

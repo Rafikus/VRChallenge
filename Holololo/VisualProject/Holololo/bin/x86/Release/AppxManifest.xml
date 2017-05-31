@@ -36,7 +36,9 @@
     </Application>
   </Applications>
   <Capabilities>
+    <uap:Capability Name="musicLibrary" />
     <uap2:Capability Name="spatialPerception" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">

@@ -28,6 +28,8 @@
     </Application>
   </Applications>
   <Capabilities>
+    <uap:Capability Name="musicLibrary" />
     <uap2:Capability Name="spatialPerception" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
 </Package>
