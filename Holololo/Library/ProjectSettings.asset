@@ -542,8 +542,8 @@ PlayerSettings:
       InternetClient: False
       InternetClientServer: False
       Location: False
-      Microphone: False
-      MusicLibrary: False
+      Microphone: True
+      MusicLibrary: True
       Objects3D: False
       PhoneCall: False
       PicturesLibrary: False
