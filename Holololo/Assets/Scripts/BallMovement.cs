@@ -19,13 +19,19 @@ public class BallMovement : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
+        
         if(collision.transform.tag == "Target")
         {
-            Destroy(gameObject);
-            Destroy(collision.gameObject);
+            AudioSource audio = collision.gameObject.GetComponent<AudioSource>();
+            audio.Play();
+            StartCoroutine(DestroyTarget(collision.gameObject, 0.2f));
+            StartCoroutine(DestroyTarget(gameObject, 0.2f));
+            
         }
         if(collision.transform.tag == "Ball")
         {
+            AudioSource audio = collision.gameObject.GetComponent<AudioSource>();
+            audio.Play();
             gameObject.GetComponent<Rigidbody>().AddExplosionForce(power, new Vector3(gameObject.transform.position.x + collision.gameObject.transform.position.x,
                                                                                       gameObject.transform.position.y + collision.gameObject.transform.position.y,
                                                                                       gameObject.transform.position.z + collision.gameObject.transform.position.z) / 2, 1f);
@@ -49,6 +55,11 @@ public class BallMovement : MonoBehaviour {
                 ),
                 ForceMode.Impulse
             );
+    }
+
+    IEnumerator DestroyTarget(GameObject gO, float delayTime) {
+        yield return new WaitForSeconds(delayTime);
+        Destroy(gO);
     }
     
 }
