@@ -21,6 +21,9 @@ public class SpawnScript : MonoBehaviour
     public GameObject ballPrefab;
     public GameObject targetPrefab;
 
+    public ArrayList balls;
+    public ArrayList targets;
+
     // Use this for initialization
     void Start()
     {
@@ -47,17 +50,22 @@ public class SpawnScript : MonoBehaviour
 
     public void SpawnElement(GameObject elementToSpawn)
     {
-        Vector3 spawnPosition = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
-        Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
-        GameObject tmp = Instantiate(elementToSpawn, spawnPosition, Quaternion.identity);
-        if(tmp.tag == "Target")
+        if (balls.Count < 3 && elementToSpawn.tag == "Ball")
         {
+            Vector3 spawnPosition = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
+            Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
+            GameObject tmp = Instantiate(elementToSpawn, spawnPosition, Quaternion.identity);
+            tmp.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3)), ForceMode.Force);
+            balls.Add(tmp);
+        }
+        else if(targets.Count < 4 && elementToSpawn.tag == "Target")
+        {
+            Vector3 spawnPosition = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
+            Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
+            GameObject tmp = Instantiate(elementToSpawn, spawnPosition, Quaternion.identity);
             tmp.transform.LookAt(Camera.main.transform);
             tmp.transform.Rotate(new Vector3(0f, 90f, 90f));
-        }
-        if(tmp.tag == "Ball")
-        {
-            tmp.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3)), ForceMode.Force);
+            targets.Add(tmp);
         }
     }
 }

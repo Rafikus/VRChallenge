@@ -14,7 +14,7 @@ public class TargetIndicator : MonoBehaviour {
     bool visible = true;
     Collider objCollider;
     private Plane[] planes;
-    private int offset = 1;
+
 
 
     void Start() {
@@ -49,7 +49,7 @@ public class TargetIndicator : MonoBehaviour {
 
             Vector2 indPos = new Vector2(indRange.x * dir.x, indRange.y * dir.y);
             indPos = new Vector2((Screen.width / 2),
-                              (Screen.height / 2));
+                                 (Screen.height / 2));
 
             Vector3 pdir = transform.position - cam.ScreenToWorldPoint(new Vector3(indPos.x, indPos.y,
                                                                                     transform.position.z));
