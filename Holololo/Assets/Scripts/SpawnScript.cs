@@ -34,6 +34,7 @@ public class SpawnScript : MonoBehaviour
     {
         ballCounter = ballSpawnDelay;
         targetCounter = targetSpawnDelay;
+        balls = new ArrayList();
     }
 
     // Update is called once per frame
