@@ -82,16 +82,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHeight: 0.2
   minHeight: -0.2
-  minBallSpawnRadius: 1
-  maxBallSpawnRadius: 5
-  minTargetSpawnRadius: 1
-  maxTargetSpawnRadius: 5
+  minBallSpawnRadius: 2
+  maxBallSpawnRadius: 10
+  minTargetSpawnRadius: 2
+  maxTargetSpawnRadius: 10
   minBallRotationSpeed: 0.1
   maxBallRotationSpeed: 1
-  maxBallCount: 40
-  maxTargetCount: 20
-  ballSpawnDelay: 3
-  targetSpawnDelay: 6
+  maxBallCount: 20
+  maxTargetCount: 10
+  ballSpawnDelay: 10
+  targetSpawnDelay: 10
   ballPrefab: {fileID: 1089426685505778, guid: e985cb584bea61044adfabde75e66d7d, type: 2}
   targetPrefab: {fileID: 1952055836516844, guid: 4c39fb83ffe9afd4db4de2960edfb72c,
     type: 2}
