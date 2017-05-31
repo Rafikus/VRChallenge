@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   power: 20
+  minBallRotationSpeed: 0.1
+  maxBallRotationSpeed: 1
 --- !u!114 &114578705025451290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,9 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 8c78050f63d27bf4e92a6832627e1c14, type: 3}
-  arrowPrefab: {fileID: 1826518322757156, guid: 08af76b2739ede24f915d52c8cb5f24a,
-    type: 2}
-  canvas: {fileID: 223835047182704746, guid: 78ec52e8a444b15449647a185f02354b, type: 2}
+  arrowPrefab: {fileID: 0}
+  canvas: {fileID: 0}
   iconSize: 50
   gui:
     m_Name: 
