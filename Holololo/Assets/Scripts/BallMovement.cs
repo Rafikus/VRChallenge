@@ -12,9 +12,9 @@ public class BallMovement : MonoBehaviour {
     }
 
     void Update () {
-		if(target != null)
+		if(target != null || targetVector != null)
         {
-            gameObject.transform.position += targetVector * Time.deltaTime;
+            gameObject.transform.position += targetVector.normalized * Time.deltaTime;
         }
     }
 
