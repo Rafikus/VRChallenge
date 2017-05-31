@@ -1,7 +1,6 @@
 #####################
 ##  OWN GITIGNORE  ##
 #####################
-/Holololo/Library
 /Holololo/WindowsStoreApp
 Holololo/Library/CurrentLayout.dwlt
 Holololo/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb
