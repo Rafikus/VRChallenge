@@ -21,10 +21,16 @@ public class ClickableObject : MonoBehaviour, IInputClickHandler, IFocusable
             FindObjectOfType<Objects>().ball = gameObject;
             Debug.Log("Licked ball");
         }
-        if(tag == "Target")
+        else if(tag == "Target")
         {
             FindObjectOfType<Objects>().target = gameObject;
             Debug.Log("Clicked target");
+        }
+        else
+        {
+            GameObject point = new GameObject();
+            point.transform.position = gameObject.transform.position;
+            FindObjectOfType<Objects>().target = point;
         }
     }
 }
