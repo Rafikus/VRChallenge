@@ -24,6 +24,13 @@ public class BallMovement : MonoBehaviour {
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
+        if(collision.transform.tag == "Ball")
+        {
+            gameObject.GetComponent<Rigidbody>().AddExplosionForce(power, new Vector3(gameObject.transform.position.x + collision.gameObject.transform.position.x,
+                                                                                      gameObject.transform.position.y + collision.gameObject.transform.position.y,
+                                                                                      gameObject.transform.position.z + collision.gameObject.transform.position.z) / 2, 1f);
+            Debug.Log("Balls Collided");
+        }
     }
 
     public void setTarget(GameObject g)
