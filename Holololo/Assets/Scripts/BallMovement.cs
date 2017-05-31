@@ -20,9 +20,9 @@ public class BallMovement : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.name == "Target")
+        if(collision.transform.tag == "Target")
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             Destroy(collision.gameObject);
         }
     }

@@ -35,21 +35,24 @@ public class SpawnScript : MonoBehaviour
         targetCounter -= Time.deltaTime;
         if (ballCounter <= 0)
         {
-            SpawnElement(ballPrefab, ballSpawnDelay);
+            SpawnElement(ballPrefab);
             ballCounter = ballSpawnDelay;
         }
         if (targetCounter <= 0)
         {
-
-            SpawnElement(targetPrefab, targetSpawnDelay);
+            SpawnElement(targetPrefab);
             targetCounter = targetSpawnDelay;
         }
     }
 
-    public void SpawnElement(GameObject elementToSpawn, float spawnDelay)
+    public void SpawnElement(GameObject elementToSpawn)
     {
         Vector3 spawnPosition = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
         Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
-        Instantiate(elementToSpawn, spawnPosition, Quaternion.identity);
+        GameObject tmp = Instantiate(elementToSpawn, spawnPosition, Quaternion.identity);
+        if(tmp.tag == "Target")
+        {
+            tmp.transform.LookAt(Camera.main.transform);
+        }
     }
 }
