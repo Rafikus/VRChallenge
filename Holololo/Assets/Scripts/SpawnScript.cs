@@ -55,5 +55,9 @@ public class SpawnScript : MonoBehaviour
             tmp.transform.LookAt(Camera.main.transform);
             tmp.transform.Rotate(new Vector3(0f, 90f, 90f));
         }
+        if(tmp.tag == "Ball")
+        {
+            tmp.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3)));
+        }
     }
 }

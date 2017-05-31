@@ -12,10 +12,6 @@ public class BallMovement : MonoBehaviour {
     }
 
     void Update () {
-		if(target != null || targetVector != null)
-        {
-            gameObject.transform.position += targetVector.normalized * Time.deltaTime;
-        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -33,6 +29,8 @@ public class BallMovement : MonoBehaviour {
         targetVector = new Vector3(target.gameObject.transform.position.x - gameObject.transform.position.x,
                                    target.gameObject.transform.position.y - gameObject.transform.position.y,
                                    target.gameObject.transform.position.z - gameObject.transform.position.z);
+        //gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        gameObject.GetComponent<Rigidbody>().AddForce(targetVector.normalized * Time.deltaTime * 20);
     }
     
 }
