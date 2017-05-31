@@ -11,6 +11,8 @@ public class SpawnScript : MonoBehaviour
     public float yMax = 50;
     public float zMin = 0;
     public float zMax = 50;
+    public float minBallRotationSpeed = 0.1f;
+    public float maxBallRotationSpeed = 1.0f;
 
     public float ballSpawnDelay = 3;
     private float ballCounter;
@@ -56,6 +58,13 @@ public class SpawnScript : MonoBehaviour
             Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
             GameObject tmp = Instantiate(elementToSpawn, spawnPosition, Quaternion.identity);
             tmp.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3)), ForceMode.Force);
+            tmp.GetComponent<Rigidbody>().AddTorque(
+                new Vector3(
+                    Random.Range(minBallRotationSpeed, maxBallRotationSpeed),
+                    Random.Range(minBallRotationSpeed, maxBallRotationSpeed),
+                    Random.Range(minBallRotationSpeed, maxBallRotationSpeed)),
+                ForceMode.Impulse
+            );
             balls.Add(tmp);
         }
         else if(targets.Count < 4 && elementToSpawn.tag == "Target")
