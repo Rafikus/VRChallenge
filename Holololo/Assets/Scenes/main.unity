@@ -259,10 +259,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMin: -2.5
   xMax: 2.5
-  yMin: -2.5
-  yMax: 2.5
-  zMin: -0.02
-  zMax: 0.05
+  yMin: -0.5
+  yMax: 0.5
+  zMin: -2.5
+  zMax: 2.5
   ballSpawnDelay: 5
   targetSpawnDelay: 5
   ballPrefab: {fileID: 1089426685505778, guid: e985cb584bea61044adfabde75e66d7d, type: 2}
@@ -527,23 +527,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.773
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.49999928
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.5000007
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.49999928
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.5000007
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_RootOrder
@@ -555,11 +555,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.00001
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4900099690581842, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90.00001
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c39fb83ffe9afd4db4de2960edfb72c, type: 2}

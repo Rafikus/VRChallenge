@@ -53,6 +53,7 @@ public class SpawnScript : MonoBehaviour
         if(tmp.tag == "Target")
         {
             tmp.transform.LookAt(Camera.main.transform);
+            tmp.transform.Rotate(new Vector3(0f, 90f, 90f));
         }
     }
 }
