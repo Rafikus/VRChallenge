@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 39
+  controlID: 77
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,8 +302,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 571
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.24244642, y: 0.07671717, z: 0.47629705}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -0.24244642, y: 0.07671717, z: 0.47629705}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -442,13 +442,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.306462, y: -0.21178955, z: 0.07014004, w: -0.92536837}
+    m_Target: {x: -0.15291192, y: -0.12709992, z: 0.019834846, w: -0.97983176}
     speed: 2
-    m_Value: {x: -0.306462, y: -0.21178955, z: 0.07014004, w: -0.92536837}
+    m_Value: {x: -0.15291192, y: -0.12709992, z: 0.019834846, w: -0.97983176}
   m_Size:
-    m_Target: 1.9629662
+    m_Target: 0.13703394
     speed: 2
-    m_Value: 1.9629662
+    m_Value: 0.13703394
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -513,9 +513,9 @@ MonoBehaviour:
     height: 279
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 14c6ffff
-    m_LastClickedID: -14828
-    m_ExpandedIDs: 386dffffe672fffff874ffff0c75ffffc077ffff5493ffffae97ffffc09dffff5aa5ffff48adffff86b5ffffe6b5ffffb6baffff14c6ffff1ec6ffff30c7ffff00000000be470000
+    m_SelectedIDs: f8050000
+    m_LastClickedID: 0
+    m_ExpandedIDs: c4faffffdcfbffff0000000034300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,19 +575,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Mrucznik\Desktop\VRChallenge\Holololo
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 299}
-    m_SelectedIDs: 60470000
-    m_LastClickedID: 18272
-    m_ExpandedIDs: 000000002c450000ba450000ce460000e44600003047000084470000904700001448000000ca9a3bffffff7f
+    m_SelectedIDs: ae2d0000
+    m_LastClickedID: 11694
+    m_ExpandedIDs: 0000000026280000662900004c2c0000722c0000a02d0000462e0000562e0000da31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,7 +615,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c450000ba450000ce460000e446000030470000844700009047000014480000
+    m_ExpandedIDs: 0000000026280000662900004c2c0000722c0000a02d0000462e0000562e0000da310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -722,7 +722,7 @@ MonoBehaviour:
     y: 100
     width: 275
     height: 550
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 275.83636}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
