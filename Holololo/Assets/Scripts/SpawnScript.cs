@@ -14,6 +14,9 @@ public class SpawnScript : MonoBehaviour
     public float minBallRotationSpeed = 0.1f;
     public float maxBallRotationSpeed = 1.0f;
 
+    public int maxBallCount = 4;
+    public int maxTargetCount = 4;
+
     public float ballSpawnDelay = 3;
     private float ballCounter;
 
@@ -52,7 +55,7 @@ public class SpawnScript : MonoBehaviour
 
     public void SpawnElement(GameObject elementToSpawn)
     {
-        if (balls.Count < 3 && elementToSpawn.tag == "Ball")
+        if (balls.Count < maxBallCount && elementToSpawn.tag == "Ball")
         {
             Vector3 spawnPosition = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
             Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
@@ -67,7 +70,7 @@ public class SpawnScript : MonoBehaviour
             );
             balls.Add(tmp);
         }
-        else if(targets.Count < 4 && elementToSpawn.tag == "Target")
+        else if(targets.Count < maxTargetCount && elementToSpawn.tag == "Target")
         {
             Vector3 spawnPosition = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
             Debug.Log("Spawned, spawnPosition: " + spawnPosition.ToString());
