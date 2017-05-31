@@ -19,7 +19,15 @@ public class Objects : MonoBehaviour {
         {
             if(target != null)
             {
-                ball.GetComponent<BallMovement>().setTarget(target.gameObject);
+                if (target.tag == "Ball")
+                {
+                    ball.GetComponent<BallMovement>().setTarget(target.gameObject);
+                    target.GetComponent<BallMovement>().setTarget(ball.gameObject);
+                }
+                else
+                {
+                    ball.GetComponent<BallMovement>().setTarget(target.gameObject);
+                }
                 target = null;
                 ball = null;
             }

@@ -6,6 +6,14 @@ using System;
 
 public class ClickableObject : MonoBehaviour, IInputClickHandler, IFocusable
 {
+
+    private Objects objects;
+
+    public void Start()
+    {
+        objects = FindObjectOfType<Objects>();
+    }
+
     public void OnFocusEnter()
     {
     }
@@ -18,19 +26,26 @@ public class ClickableObject : MonoBehaviour, IInputClickHandler, IFocusable
     {
         if(tag == "Ball")
         {
-            FindObjectOfType<Objects>().ball = gameObject;
+            if (objects.ball != null && objects.target == null)
+            {
+                objects.target = gameObject;
+            }
+            else
+            {
+                objects.ball = gameObject;
+            }
             Debug.Log("Licked ball");
         }
         else if(tag == "Target")
         {
-            FindObjectOfType<Objects>().target = gameObject;
+            objects.target = gameObject;
             Debug.Log("Clicked target");
         }
         else
         {
             GameObject point = new GameObject();
-            point.transform.position = gameObject.transform.position;
-            FindObjectOfType<Objects>().target = point;
+            point.transform.position = GameObject.Find("DefaultCursor").transform.position;
+            objects.target = point;
         }
     }
 }

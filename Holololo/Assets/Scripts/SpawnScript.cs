@@ -57,7 +57,7 @@ public class SpawnScript : MonoBehaviour
         }
         if(tmp.tag == "Ball")
         {
-            tmp.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3)));
+            tmp.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3)), ForceMode.Force);
         }
     }
 }
