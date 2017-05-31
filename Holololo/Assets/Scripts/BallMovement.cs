@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallMovement : MonoBehaviour {
 
     private GameObject target;
     private Vector3 targetVector;
+    public PointerCounter counter;
     public int power = 20;
     public float minBallRotationSpeed = 0.1f;
     public float maxBallRotationSpeed = 1.0f;
 
     void Start()
     {
+        counter = FindObjectOfType<PointerCounter>();
     }
 
     void Update () {
@@ -21,6 +24,7 @@ public class BallMovement : MonoBehaviour {
     {
         if(collision.transform.tag == "Target")
         {
+            counter.Points++;
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
