@@ -14,7 +14,7 @@ public class BallMovement : MonoBehaviour {
     void Update () {
 		if(target != null)
         {
-            gameObject.transform.position += targetVector * Time.deltaTime * 0.2f;
+            gameObject.transform.position += targetVector * Time.deltaTime;
         }
     }
 
