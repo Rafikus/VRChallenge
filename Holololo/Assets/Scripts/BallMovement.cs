@@ -6,6 +6,7 @@ public class BallMovement : MonoBehaviour {
 
     private GameObject target;
     private Vector3 targetVector;
+    public int power = 20;
 
     void Start()
     {
@@ -26,10 +27,10 @@ public class BallMovement : MonoBehaviour {
     public void setTarget(GameObject g)
     {
         target = g;
-        targetVector = new Vector3((target.gameObject.transform.position.x - gameObject.transform.position.x) * 20,
-                                   (target.gameObject.transform.position.y - gameObject.transform.position.y) * 20,
-                                   (target.gameObject.transform.position.z - gameObject.transform.position.z) * 20);
-        //gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        targetVector = new Vector3((target.gameObject.transform.position.x - gameObject.transform.position.x) * power,
+                                   (target.gameObject.transform.position.y - gameObject.transform.position.y) * power,
+                                   (target.gameObject.transform.position.z - gameObject.transform.position.z) * power);
+        gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         gameObject.GetComponent<Rigidbody>().AddForce(targetVector);
 
     }
