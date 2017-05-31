@@ -164,9 +164,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f49190f6345e14d92f73878acc1ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 29b5ef3bd595f5d4f8982293d053909c, type: 3}
+  icon: {fileID: 2800000, guid: 8c78050f63d27bf4e92a6832627e1c14, type: 3}
+  arrowPrefab: {fileID: 1826518322757156, guid: 08af76b2739ede24f915d52c8cb5f24a,
+    type: 2}
+  canvas: {fileID: 223835047182704746, guid: 78ec52e8a444b15449647a185f02354b, type: 2}
   iconSize: 50
-  gooey:
+  gui:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}

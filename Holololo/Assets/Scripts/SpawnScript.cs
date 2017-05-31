@@ -20,6 +20,7 @@ public class SpawnScript : MonoBehaviour
 
     public GameObject ballPrefab;
     public GameObject targetPrefab;
+    public GameObject arrowPrefab;
 
     // Use this for initialization
     void Start()
