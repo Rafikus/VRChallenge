@@ -4,20 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class VoiceControl : MonoBehaviour, ISpeechHandler
+public class VoiceControl : MonoBehaviour
 {
-    public void OnSpeechKeywordRecognized(SpeechKeywordRecognizedEventData eventData)
+    public void stop()
     {
-        switch (eventData.RecognizedText.ToLower())
-        {
-            case "stop":
-                Debug.Log("STOP!");
-                Time.timeScale = 0;
-                break;
-            case "start":
-                Debug.Log("START!");
-                Time.timeScale = 1;
-                break;
-        }
+        Debug.Log("STOP!");
+        Time.timeScale = 0;
+    }
+
+    public void start()
+    {
+        Debug.Log("START!");
+        Time.timeScale = 1;
     }
 }
