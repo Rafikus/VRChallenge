@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114546930691431490}
   - component: {fileID: 114578705025451290}
   - component: {fileID: 114723951076083522}
+  - component: {fileID: 114790746368181952}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -141,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8ae47acc7bb6245934a8e388093818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counter: {fileID: 0}
   power: 20
   minBallRotationSpeed: 0.1
   maxBallRotationSpeed: 1
@@ -237,6 +239,17 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+--- !u!114 &114790746368181952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1089426685505778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236501e03a22e934a8fca83c001f3ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135348059596959836
 SphereCollider:
   m_ObjectHideFlags: 1

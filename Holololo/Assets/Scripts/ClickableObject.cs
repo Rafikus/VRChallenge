@@ -6,12 +6,13 @@ using System;
 
 public class ClickableObject : MonoBehaviour, IInputClickHandler, IFocusable
 {
-
+    private GameObject cursor;
     private Objects objects;
 
     public void Start()
     {
         objects = FindObjectOfType<Objects>();
+        cursor = GameObject.Find("DefaultCursor").gameObject;
     }
 
     public void OnFocusEnter()
@@ -44,7 +45,7 @@ public class ClickableObject : MonoBehaviour, IInputClickHandler, IFocusable
         else
         {
             GameObject point = new GameObject();
-            point.transform.position = GameObject.Find("DefaultCursor").transform.position;
+            point.transform.position = cursor.transform.position;
             objects.target = point;
         }
     }
