@@ -80,12 +80,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683f9ca41212b9a4dae56695daca0845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHeight: 0.2
-  minHeight: -0.2
+  maxHeight: 0.5
+  minHeight: -0.5
   minBallSpawnRadius: 2
-  maxBallSpawnRadius: 10
+  maxBallSpawnRadius: 15
   minTargetSpawnRadius: 2
-  maxTargetSpawnRadius: 10
+  maxTargetSpawnRadius: 15
   minBallRotationSpeed: 0.1
   maxBallRotationSpeed: 1
   maxBallCount: 20

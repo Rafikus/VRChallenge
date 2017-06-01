@@ -609,26 +609,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114951706779462950, guid: 553f0202dd7b2db4c8bbd501f9c70adf,
-        type: 2}
-      propertyPath: maxBallSpawnRadius
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114951706779462950, guid: 553f0202dd7b2db4c8bbd501f9c70adf,
-        type: 2}
-      propertyPath: maxTargetSpawnRadius
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114951706779462950, guid: 553f0202dd7b2db4c8bbd501f9c70adf,
-        type: 2}
-      propertyPath: maxHeight
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114951706779462950, guid: 553f0202dd7b2db4c8bbd501f9c70adf,
-        type: 2}
-      propertyPath: minHeight
-      value: -0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 553f0202dd7b2db4c8bbd501f9c70adf, type: 2}
   m_IsPrefabParent: 0
