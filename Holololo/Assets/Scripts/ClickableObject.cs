@@ -6,6 +6,7 @@ using System;
 
 public class ClickableObject : MonoBehaviour, IInputClickHandler
 {
+    private Renderer render;
     private GameObject cursor;
     private Objects objects;
 
@@ -40,5 +41,12 @@ public class ClickableObject : MonoBehaviour, IInputClickHandler
             point.transform.position = cursor.transform.position;
             objects.target = point;
         }
+    }
+
+    private void shaderSet(Renderer render, Shader shader)
+    {
+        if (render.materials[1] != null)
+            render.materials[1].shader = shader;
+        render.materials[0].shader = shader;
     }
 }
