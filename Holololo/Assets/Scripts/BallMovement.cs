@@ -6,12 +6,14 @@ public class BallMovement : MonoBehaviour {
 
     private GameObject target;
     private Vector3 targetVector;
+    private PointerCounter counter;
     public int power = 20;
     public float minBallRotationSpeed = 0.1f;
     public float maxBallRotationSpeed = 1.0f;
 
     void Start()
     {
+        counter = FindObjectOfType<PointerCounter>();
     }
 
     void Update () {
@@ -22,6 +24,7 @@ public class BallMovement : MonoBehaviour {
         
         if(collision.transform.tag == "Target")
         {
+            counter.Points++;
             AudioSource audio = collision.gameObject.GetComponent<AudioSource>();
             audio.Play();
             StartCoroutine(DestroyTarget(collision.gameObject, 0.2f));
